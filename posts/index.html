@@ -1,11 +1,10 @@
 <!doctype html>
 <html lang="en-us">
   <head>
-	<meta name="generator" content="Hugo 0.150.0">
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My New Hugo Site</title>
+    <title>Posts | My New Hugo Site</title>
     <meta name="description" content="" />
 
     
@@ -218,64 +217,107 @@
     <div class="container">
       
 <style>
-  .page-container {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;  
-    max-width: 580px;  
-    padding: 0 20px;  
+  .posts-container {
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 0 20px;
   }
   
-  .content-column {
-    width: 100%;
-    box-sizing: border-box;
-    min-width: auto;
-    max-width: 580px;  
-    font-size: 15px;
+  .posts-header {
+    margin-bottom: 40px;
   }
   
-  @media (max-width: 992px) {
-    .page-container {
-      flex-direction: column;
-    }
-    
-    .content-column {
-      width: 100%;
-      padding-right: 0;
-      min-width: auto;  
-      max-width: 580px;  
-      margin: 0 auto;  
-    }
+  .posts-title {
+    font-family: 'Source Serif Pro', serif;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #4a4b4f;
+  }
+  
+  .posts-description {
+    color: #666;
+    margin-bottom: 30px;
+  }
+  
+  .post-list {
+    margin-bottom: 40px;
+  }
+  
+  .post-item {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .post-item:last-child {
+    border-bottom: none;
+  }
+  
+  .post-link {
+    display: block;
+    text-decoration: none;
+    color: #4a4b4f;
+  }
+  
+  .post-link:hover .post-item-title {
+    color: #8f6a60;
+  }
+  
+  .post-item-title {
+    font-family: 'Source Serif Pro', serif;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    transition: color 0.2s;
+  }
+  
+  .post-item-date {
+    color: #9d9d9d;
+    font-style: italic;
+    margin-bottom: 8px;
+    font-size: 14px;
+  }
+  
+  .post-item-description {
+    color: #666;
+    line-height: 1.5;
+  }
+  
+  .back-link {
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    color: #8f6a60;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
+  }
+  
+  .back-link:hover {
+    color: #6b5046;
   }
 </style>
 
-<div class="page-container">
-  <div class="content-column">
-    <div class="section">
-      
-        <p>Jadd Hallaj is an architect, researcher, and urban planner from Aleppo with a focus on spatial data and Geographic Information Systems. He earned his Master’s degree in Architecture from the <a href="https://paris-lavillette.archi.fr">ENSA Paris la Villette</a> in 2020. Currently, he is a member of <a href="https://www.lugarit.com/">LUGARIT</a>—a think-and-do tank that produces knowledge to support communities and institutions in leveraging their resources and ingenuity to consolidate “real” development on the ground. His work merges digital technologies and participatory approaches to promote territorial innovation. In 2021, he co-founded the <a href="https://www.livingsummerschool.com/">Living Summer School</a>, an Erasmus+ informal education initiative and member of the <a href="https://lina.community">LINA network for European architecture</a>. In 2023, his team was the recipient of the EUROPAN Prize for the development of <a href="https://www.europan-europe.eu/en/exchanges/aux-fibres-de-leau">Rouen’s Eastern Seine river banks</a>.</p>
-
-      
-    </div>    
+<div class="posts-container">
+  <div class="posts-header">
+    <h1 class="posts-title">Posts</h1>
     
-    <div class="section">
-      <div class="works-title">Writing</div>
-
-      
-      <div class="work-item">
-        <a href="/posts/my-first-post/" class="work-link">
-          <span class="work-title">My First Post</span> 
-          <span class="year">(2025)</span>
-          <div class="description">Add a brief description here.</div>
-        </a>
-      </div>
-      
-    </div>
-
-    <div class="contact">
-         
-    </div>
   </div>
+  
+  <div class="post-list">
+    
+    <div class="post-item">
+      <a href="https://example.org/posts/my-first-post/" class="post-link">
+        <h2 class="post-item-title">My First Post</h2>
+        <div class="post-item-date">September 9, 2025</div>
+        <div class="post-item-description">Add a brief description here.</div>
+      </a>
+    </div>
+    
+  </div>
+  
+  <a href="/" class="back-link">← Back to home</a>
 </div>
 
     </div>
